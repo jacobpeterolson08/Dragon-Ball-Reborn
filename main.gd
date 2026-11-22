@@ -12,9 +12,9 @@ var status := "Press E to play the intro"
 
 func _ready() -> void:
     var image := Image.new()
-    var error := image.load("res://assets/spritesheet.png")
+    var error := image.load("res://Untitled 11-22-2026 03-06-34.png")
     if error != OK:
-        status = "Add your 1024x1024 PNG as assets/spritesheet.png"
+        status = "Sprite sheet missing from repository root"
         push_warning(status)
     else:
         sprite_texture = ImageTexture.create_from_image(image)
